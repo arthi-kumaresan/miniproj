@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* Colors */
+    --primary-50: #f0f9ff;
+    --primary-100: #e0f2fe;
+    --primary-200: #bae6fd;
+    --primary-300: #7dd3fc;
+    --primary-400: #38bdf8;
+    --primary-500: #0ea5e9;
+    --primary-600: #0284c7;
+    --primary-700: #0369a1;
+    --primary-800: #075985;
+    --primary-900: #0c4a6e;
+    --primary-950: #082f49;
+
+    --accent-500: #8b5cf6;
+    --accent-600: #7c3aed;
+
+    --success: #10b981;
+    --warning: #f59e0b;
+    --error: #ef4444;
+
+    --bg-slate-900: #0f172a;
+    --bg-slate-950: #020617;
+
+    /* Glassmorphism */
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-blur: blur(10px);
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-slow: 0.5s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-slate-950);
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+.premium-card {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: var(--transition-fast);
+}
+
+.premium-card:hover {
+    border-color: var(--primary-500);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -20px rgba(14, 165, 233, 0.4);
+}
+
+.stat-icon-container {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-fast);
+}
+
+.premium-card:hover .stat-icon-container {
+    transform: scale(1.1) rotate(5deg);
+    background: var(--primary-500);
+    color: white !important;
+}
+
+.stat-icon-container.blue {
+    color: var(--primary-400);
+    border-color: rgba(14, 165, 233, 0.2);
+}
+
+.stat-icon-container.orange {
+    color: var(--warning);
+    border-color: rgba(245, 158, 11, 0.2);
+}
+
+.stat-icon-container.emerald {
+    color: var(--success);
+    border-color: rgba(16, 185, 129, 0.2);
+}
+
+.stat-icon-container.purple {
+    color: var(--accent-500);
+    border-color: rgba(139, 92, 246, 0.2);
+}
+
+.trend-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    border-radius: 2rem;
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--success);
+}
+
+.trend-badge.down {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--error);
+}
+
+.premium-btn {
+    background: linear-gradient(135deg, var(--primary-500), var(--accent-500));
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.premium-btn:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}
+
+/* Sidebar Styles */
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    transition: var(--transition-fast);
+    cursor: pointer;
+    text-decoration: none;
+    border-left: 2px solid transparent;
+}
+
+.sidebar-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+.sidebar-item.active {
+    background: linear-gradient(to right, rgba(14, 165, 233, 0.2), transparent);
+    border-left-color: var(--primary-500);
+    color: white;
+}
+
+.glass-input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    outline: none;
+}
+
+.glass-input:focus {
+    border-color: var(--primary-500);
+}

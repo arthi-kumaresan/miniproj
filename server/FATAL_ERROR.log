@@ -1,0 +1,55 @@
+SERVER STARTED EXECUTION
+connectDB function called
+Express app initialized
+connectDB function called
+Loading authRoutes...
+Express app initialized
+Loading authRoutes...
+authRoutes loaded
+authRoutes loaded
+Loading documentRoutes...
+Loading documentRoutes...
+documentRoutes loaded
+Loading userRoutes...
+userRoutes loaded
+Loading auditRoutes...
+auditRoutes loaded
+All routes loaded
+Attempting to listen on port 5005...
+
+
+SERVER ERROR EVENT:
+listen EADDRINUSE: address already in use :::5005
+Error: listen EADDRINUSE: address already in use :::5005
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (C:\Users\Arthi\Desktop\minipro\v2\server\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\Users\Arthi\Desktop\minipro\v2\server\index.js:63:24)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+documentRoutes loaded
+Loading userRoutes...
+userRoutes loaded
+Loading auditRoutes...
+auditRoutes loaded
+All routes loaded
+Attempting to listen on port 5005...
+
+
+SERVER ERROR EVENT:
+listen EADDRINUSE: address already in use :::5005
+Error: listen EADDRINUSE: address already in use :::5005
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (C:\Users\Arthi\Desktop\minipro\v2\server\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\Users\Arthi\Desktop\minipro\v2\server\index.js:63:24)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
